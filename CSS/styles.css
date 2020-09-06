@@ -9,6 +9,7 @@
     --blue: #2196F3;
     --white-transp:rgba(255, 255, 255, 0.6);
     --gray: #F5F4FA;
+    --pictures:#AFB1B8;
 }
 body {
     background-color: var(--white);
@@ -40,7 +41,7 @@ h2 {
     font-size: 36px;
     margin-bottom: 55px;
     text-align: center;
-
+font-family: 'Roboto';
 }
 h3 {
     font-size: 16px;
@@ -106,10 +107,10 @@ color: var(--blue);
     display: flex;
     align-items: center;
 }
-.header-contacts a {
+.header-contacts p {
     margin-left: 50px;
 }
-.header-contacts a:first-child {
+.header-contacts p:first-child {
     margin-left: 0px;
 
 }
@@ -118,21 +119,41 @@ color: var(--blue);
 .header-contacts a{
     display: flex;
     align-items: center;
+    padding: 0;
+}
+.header-contacts a{
     color: var(--active);
     text-decoration: none;
 }
 .header-contacts a:hover, .header-contacts a:focus {
     color: var(--blue);
 }
-
-.mail::before {
+.mail svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill:var(--active);
+}
+.mail:hover svg,  .mail:focus svg {
+    fill: var(--blue);
+}
+.phone svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill:var(--active);
+}
+.phone:hover svg,  .phone:focus svg {
+    fill: var(--blue);
+}
+/* .mail::before {
     content: "";
     width: 16px;
   height: 12px;
     margin-right: 10px;
     background-image: url(../images/icons/mail.svg);
     background-repeat: no-repeat;
-}
+} 
 .phone::before {
     content: "";
     width: 10px;
@@ -140,7 +161,7 @@ color: var(--blue);
     margin-right: 10px;
     background-image: url(../images/icons/telephone.svg);
     background-repeat: no-repeat;
-}
+}*/
 
 .maininfo {
 height: 600px;
@@ -302,6 +323,31 @@ fill:#AFB1B8;
 /* конец иконки соцсетей */
 .customers {
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+.customers ul {
+    display: flex;
+}
+.customer-logo a {
+    display: block;
+    border: 1px solid var(--pictures);
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    margin-right: 30px;
+    padding: 22px 45px;
+}
+.customer-logo a:hover, .customer-logo a:focus {
+    border: 1px solid var(--blue);
+}
+.customer-logo a:hover svg, .customer-logo a:focus svg {
+fill:var(--blue);
+}
+.customer-logo svg {
+    fill: var(--pictures);
+    
+    width: 80px;
+    height: 45px;
 }
 
 .invisible {
@@ -408,4 +454,11 @@ footer p {
 }
 .footer-social {
     text-transform: uppercase;
+    margin-left: 70px;
+    font-weight: bold;
 }
+footer .but-icon {
+    background-color:rgba(255, 255, 255, 0.1);
+}
+footer .but-icon svg{
+fill:#ffffff;}
