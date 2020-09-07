@@ -168,7 +168,7 @@ height: 600px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/webstudio-banner.jpg);
 background-repeat: no-repeat, no-repeat;
 background-position-x: center, center;
-background-size: 1600px, contain;
+background-size: 1600px, 1600px;
 text-align: center;
 padding-top: 200px;
 }
@@ -234,7 +234,7 @@ border-radius: 4px;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-color: #F5F4FA;
+    background-color: var(--gray);
     background-position: center top 30px;
     border-radius: 4px;
 background-repeat: no-repeat;
@@ -291,7 +291,7 @@ background-repeat: no-repeat;
 }
 /* начало иконки соцсетей */
 .but-icon {
-    background-color: #ffffff;
+    background-color: var(--white);
     border:none;
     margin-right: 10px;
     padding: 0px;
@@ -309,14 +309,14 @@ background-repeat: no-repeat;
     width: 20px;
 height: 20px;
 border:none;
-fill:#AFB1B8;
+fill:var(--pictures);
 }
 
 .but-icon:hover svg, .but-icon:focus svg{
-    fill:#ffffff;
+    fill:var(--white);
 }
 .but-icon:hover, .but-icon:focus {
-    background-color:#2196F3;
+    background-color:var(--blue);
 
     border-radius: 50%;
 } 
@@ -362,8 +362,8 @@ fill:var(--blue);
 }
 .filter-of-works li {
     margin-right: 8px;
-    border: 1px solid #F5F4FA;
-    background: #F5F4FA;
+    border: 1px solid var(--gray);
+    background: var(--gray);
 border-radius: 4px;
 font-style: normal;
 font-weight: 500;
@@ -461,4 +461,4 @@ footer .but-icon {
     background-color:rgba(255, 255, 255, 0.1);
 }
 footer .but-icon svg{
-fill:#ffffff;}
+fill:var(--white);}
